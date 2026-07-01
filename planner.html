@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Academic Planner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="planner.html">Academic Planner</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h1>Academic Planner</h1>
+
+    <p>
+      Use this tool to manage your academic tasks. You can add new tasks, mark them as completed, 
+      and delete tasks you no longer need.
+    </p>
+
+    <div class="section">
+      <h2>Add New Task</h2>
+      <div class="task-input-container">
+        <input type="text" id="taskInput" placeholder="Enter your task here...">
+        <button onclick="addTask()">Add Task</button>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>My Tasks</h2>
+      <ul id="taskList" class="task-list">
+      </ul>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>&copy; ©️ Copyright 2025 MIVA Open University. All Rights Reserved.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

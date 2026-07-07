@@ -3,25 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Me</title>
+  <title>About Me — Michael George</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About Me</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="planner.html">Academic Planner</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
+  <nav class="tabbar">
+    <div class="nav-inner">
+      <div class="nav-dots"><span></span><span></span><span></span></div>
+      <span class="nav-brand"><strong>michael@portfolio</strong>:~$</span>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <ul>
+        <li><a href="index.html">home</a></li>
+        <li><a href="about.html">about</a></li>
+        <li><a href="projects.html">projects</a></li>
+        <li><a href="planner.html">planner</a></li>
+        <li><a href="contact.html">contact</a></li>
+      </ul>
+    </div>
   </nav>
 
-  <div class="container">
+  <main class="container">
     <h1>About Me</h1>
 
-    <div class="section">
+    <section class="section">
+      <span class="eyebrow">education</span>
       <h2>Educational Background</h2>
       <table>
         <thead>
@@ -36,69 +42,87 @@
           <tr>
             <td>Miva Open University</td>
             <td>B.Sc. Cybersecurity</td>
-            <td>2026 - Present</td>
+            <td>2026 – Present</td>
             <td>3.41 GPA</td>
           </tr>
           <tr>
-            Government technical college</td>
-            <td>WAEC/SSCE</td>
-            <td>2012 - 2017</td>
-            <td>7 C</td>
+            <td>Government Technical College</td>
+            <td>WAEC / SSCE</td>
+            <td>2012 – 2017</td>
+            <td>7 Credits</td>
           </tr>
           <tr>
-            <td>Daclad international nursery and primary school</td>
+            <td>Daclad International Nursery &amp; Primary School</td>
             <td>FSLC</td>
-            <td>2004 - 2009</td>
+            <td>2004 – 2009</td>
             <td>Distinction</td>
           </tr>
         </tbody>
       </table>
-    </div>
+    </section>
 
-    <div class="section">
+    <section class="section">
+      <span class="eyebrow">aspirations</span>
       <h2>Career Aspirations</h2>
-      <p>
-        I aspire to become a top-tier Offensive Security Specialist and Penetration Tester, dedicated to proactively identifying system vulnerabilities and strengthening organizational defenses. My ambition is to master the mindset of modern threat actors to effectively outmaneuver them, securing digital landscapes through rigorous testing and ethical hacking. I value the flexibility of remote work and am committed to staying ahead of the rapidly evolving threat landscape through constant technical upskilling.
-To achieve this, my immediate focus is securing a practical internship where I can learn advanced defensive and offensive tactics from established industry professionals. Looking further ahead, I aim to establish an innovative cybersecurity consultancy that develops bleeding-edge security assessment tools and products to empower businesses globally.
-      </p>
-      <p>
-        In the short term, I am seeking internship opportunities where I can gain practical 
-        experience and learn from experienced developers. Long-term, I aspire to start my own 
-        tech company that creates innovative digital products.
-      </p>
-    </div>
+      <div class="panel">
+        <p>
+          I aspire to become a top-tier offensive security specialist and penetration tester,
+          dedicated to proactively identifying system vulnerabilities and strengthening
+          organizational defenses. My ambition is to master the mindset of modern threat actors so
+          I can outmaneuver them, securing digital landscapes through rigorous testing and ethical
+          hacking. I value the flexibility of remote work and am committed to staying ahead of the
+          rapidly evolving threat landscape through constant technical upskilling.
+        </p>
+        <p style="margin-top: 14px;">
+          My immediate focus is securing a practical internship where I can learn advanced
+          defensive and offensive tactics from established industry professionals. Looking further
+          ahead, I plan to establish an innovative cybersecurity consultancy that develops
+          bleeding-edge security assessment tools to empower businesses globally — starting with
+          internships and hands-on experience now, and building toward founding my own security
+          products company in the long term.
+        </p>
+      </div>
+    </section>
 
-    <div class="section">
+    <section class="section">
+      <span class="eyebrow">skill set</span>
       <h2>Technical Skills</h2>
       <div class="skills-list">
-        <div class="skill-item">
+        <div class="panel skill-item">
+          <span class="eyebrow">markup</span>
           <h3>HTML5</h3>
-          <p>Advanced knowledge of semantic HTML and web structure</p>
+          <p>Semantic structure and accessible web markup.</p>
         </div>
-        <div class="skill-item">
+        <div class="panel skill-item">
+          <span class="eyebrow">styling</span>
           <h3>CSS3</h3>
-          <p>Styling, Flexbox, Grid, and responsive design</p>
+          <p>Flexbox, Grid, custom properties, and responsive design.</p>
         </div>
-        <div class="skill-item">
+        <div class="panel skill-item">
+          <span class="eyebrow">scripting</span>
           <h3>JavaScript</h3>
-          <p>DOM manipulation, events, and interactive features</p>
+          <p>DOM manipulation, event handling, and interactive features.</p>
         </div>
-        <div class="skill-item">
+        <div class="panel skill-item">
+          <span class="eyebrow">programming</span>
           <h3>Python</h3>
-          <p>Basic programming and problem solving</p>
+          <p>Scripting fundamentals and problem solving.</p>
         </div>
-        <div class="skill-item">
-          <h3>Git & GitHub</h3>
-          <p>Version control and code collaboration</p>
+        <div class="panel skill-item">
+          <span class="eyebrow">version control</span>
+          <h3>Git &amp; GitHub</h3>
+          <p>Source control, branching, and collaborative workflows.</p>
         </div>
-        <div class="skill-item">
+        <div class="panel skill-item">
+          <span class="eyebrow">data</span>
           <h3>SQL</h3>
-          <p>Database queries and data management</p>
+          <p>Database queries and structured data management.</p>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="section">
+    <section class="section">
+      <span class="eyebrow">off duty</span>
       <h2>Hobbies and Interests</h2>
       <div class="hobbies-list">
         <span class="hobby-tag">⚽ Football</span>
@@ -110,12 +134,14 @@ To achieve this, my immediate focus is securing a practical internship where I c
         <span class="hobby-tag">✈️ Travel</span>
         <span class="hobby-tag">🍳 Cooking</span>
       </div>
-    </div>
-
-  </div>
+    </section>
+  </main>
 
   <footer>
-    <p>&copy; Copyright 2025 MIVA Open University. All Rights Reserved.</p>
+    <div class="footer-inner">
+      <span><span class="status-dot"></span>system nominal</span>
+      <span>&copy; 2025 MIVA Open University. All Rights Reserved.</span>
+    </div>
   </footer>
 
   <script src="js/main.js"></script>

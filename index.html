@@ -3,64 +3,118 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio - Home</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Michael George — Cybersecurity Portfolio</title>
+  <meta name="description" content="Personal portfolio and academic management site for Michael George, Cybersecurity student at MIVA Open University.">
+  <link rel="stylesheet" href="style.css?v=2">
 </head>
 <body>
 
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About Me</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="planner.html">Academic Planner</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-
-  <div class="container">
-    <h1>Welcome to My Portfolio</h1>
-
-    <img src="yourimage.png" alt="Student Photo" class="profile-img">
-
-    <div class="section">
-      <h2>About Me</h2>
-      <p>
-
-Hello! My name is Michael George is a driven technical professional, academic learner, and problem solver who operates at the intersection of renewable energy systems, information technology, and cybersecurity. Known for his hands-on analytical skills and commitment to growth, Michael splits his time between managing complex engineering projects and expanding his technical expertise.
-      </p>
-      <p>
-        This website serves as my personal portfolio where I showcase my academic achievements, 
-        projects, and skills. I built this site using HTML, CSS, and JavaScript as part of my 
-        COS 106 term project.
-      </p>
-    </div>
-
-    <div class="section">
-      <h2>Brief Biography</h2>
-      <ul style="list-style: disc; margin-left: 40px;">
-        <li>Student at Miva Open University</li>
-        <li>Studying Cybersecurity (100 Level)</li>
-        <li>Interested in Web Development</li>
-        <li>Goal: Become a Full-Stack Developer</li>
+  <nav class="tabbar">
+    <div class="nav-inner">
+      <div class="nav-dots"><span></span><span></span><span></span></div>
+      <span class="nav-brand"><strong>michael@portfolio</strong>:~$</span>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <ul>
+        <li><a href="index.html">home</a></li>
+        <li><a href="about.html">about</a></li>
+        <li><a href="projects.html">projects</a></li>
+        <li><a href="planner.html">planner</a></li>
+        <li><a href="contact.html">contact</a></li>
       </ul>
     </div>
+  </nav>
 
-    <div class="section">
-      <h2>Audio Introduction</h2>
-      <audio controls style="width: 100%;">
-        <source src="media/intro.mp3" type="audio/mpeg">
-        Your browser does not support the audio element. Please add your audio file in the media folder.
-      </audio>
-      <p style="margin-top: 10px; font-size: 0.9em; color: #666;">
-        <em>Note: Replace "media/intro.mp3" with your actual audio file path.</em>
+  <main class="container">
+
+    <section class="hero">
+      <div class="terminal">
+        <div class="terminal-bar">
+          <span></span><span></span><span></span>
+          <em>michael@security-ops: ~</em>
+        </div>
+        <div class="terminal-body">
+          <div class="terminal-line">
+            <span class="prompt">$</span>whoami
+            <span class="out">Michael George</span>
+          </div>
+          <div class="terminal-line">
+            <span class="prompt">$</span>cat role.txt
+            <span class="out role">Cybersecurity Student · Aspiring Penetration Tester</span>
+          </div>
+          <div class="terminal-line">
+            <span class="prompt">$</span>echo $WELCOME_MESSAGE
+            <span class="out role">Welcome — thanks for stopping by my portfolio.<span class="cursor"></span></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-photo-wrap">
+        <div class="badge-frame">
+          <svg viewBox="0 0 220 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Photo of Michael George">
+            <defs>
+              <clipPath id="avatar-clip">
+                <circle cx="110" cy="110" r="108" />
+              </clipPath>
+            </defs>
+            <rect width="220" height="220" fill="#182333"/>
+            <image href="media/Project.jpg" width="220" height="220" clip-path="url(#avatar-clip)" preserveAspectRatio="xMidYMid slice" />
+            <circle cx="110" cy="110" r="108" fill="none" stroke="#35e0a6" stroke-width="1.5" stroke-dasharray="4 6" opacity="0.5">
+              <animateTransform attributeName="transform" type="rotate" from="0 110 110" to="360 110 110" dur="20s" repeatCount="indefinite" />
+            </circle>
+          </svg>
+        </div>
+        <p class="badge-caption">ACCESS CARD · <strong>M. GEORGE</strong><br>Cybersecurity, MIVA OU</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <span class="eyebrow">about</span>
+      <h2>Brief Biography</h2>
+      <p>
+        My name is Michael George — a driven technical professional, academic learner, and problem
+        solver who operates at the intersection of renewable energy systems, information technology,
+        and cybersecurity. I'm known for hands-on analytical skills and a steady commitment to growth,
+        splitting my time between managing complex engineering work and building out my technical
+        expertise in security.
       </p>
-    </div>
+      <p style="margin-top: 14px;">
+        This site is my personal portfolio, built as my COS 106 term project — it showcases my
+        academic background, my projects, and the tools I'm learning, and includes a small
+        academic planner I built to manage my own tasks.
+      </p>
 
-  </div>
+      <ul style="list-style: none; margin-top: 22px; display: flex; flex-direction: column; gap: 10px;">
+        <li class="muted" style="font-family: var(--font-mono); font-size: 0.9rem;">▹ Student at Miva Open University</li>
+        <li class="muted" style="font-family: var(--font-mono); font-size: 0.9rem;">▹ Studying Cybersecurity (100 Level)</li>
+        <li class="muted" style="font-family: var(--font-mono); font-size: 0.9rem;">▹ Interested in Offensive Security &amp; Web Development</li>
+        <li class="muted" style="font-family: var(--font-mono); font-size: 0.9rem;">▹ Goal: Penetration Tester &amp; Security Consultancy Founder</li>
+      </ul>
+
+      <div class="cta-row">
+        <a class="btn" href="about.html">View Full Background →</a>
+        <a class="btn alt" href="contact.html">Get In Touch</a>
+      </div>
+    </section>
+
+    <section class="section">
+      <span class="eyebrow">audio log</span>
+      <h2>Audio Introduction</h2>
+      <div class="panel">
+        <audio controls>
+          <source src="media/intro.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+        <p class="media-note">Add your own recording at <code>media/intro.mp3</code> — a 20–30 second spoken introduction works well here.</p>
+      </div>
+    </section>
+
+  </main>
 
   <footer>
-    <p>&copy; ©️ Copyright 2025 MIVA Open University. All Rights Reserved.</p>
+    <div class="footer-inner">
+      <span><span class="status-dot"></span>system nominal</span>
+      <span>&copy; 2025 MIVA Open University. All Rights Reserved.</span>
+    </div>
   </footer>
 
   <script src="js/main.js"></script>
